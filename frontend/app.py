@@ -1,5 +1,10 @@
+import sys
+import os
+
+# 🔥 IMPORTANT : mettre AVANT les imports backend
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
-import requests
 from backend.analyzer import analyze_cv
 
 st.set_page_config(page_title="CV Analyzer AI", layout="wide")
