@@ -1,37 +1,42 @@
 # 🧠 CV Analyzer AI
 
-Application full stack qui analyse un CV et le compare à une offre d'emploi grâce à une IA simple.
+Application web intelligente qui analyse un CV et le compare à une offre d'emploi.
 
 ---
 
 ## 🚀 Fonctionnalités
 
-- Analyse de CV vs offre d’emploi
-- Score de matching sur 100
-- Détection des mots-clés manquants
-- Interface web simple (Streamlit)
-- API backend FastAPI
+- 📄 Upload de CV (PDF)
+- ✍️ Analyse texte CV vs offre
+- 📊 Score de matching sur 100
+- 🔎 Détection des mots-clés manquants
+- 📈 Interface interactive (Streamlit)
+- 🧠 IA simple basée sur scoring Python
 
 ---
 
 ## 🧠 Stack technique
 
 - Python
-- FastAPI
 - Streamlit
-- Pydantic
+- FastAPI (backend API)
+- PyPDF2
 - Requests
 
 ---
 
-## 📊 Architecture
+## 🏗️ Architecture
 
-Frontend (Streamlit) → API (FastAPI) → IA (Python analyzer)
+Frontend (Streamlit)
+→ Backend IA (Python)
+→ Analyse CV / Job
+→ Retour score + feedback
 
 ---
 
 ## ▶️ Lancer le projet
 
-### 1. Backend
+### 1. Installer les dépendances
+
 ```bash
-python -m uvicorn backend.main:app --reload
+pip install -r requirements.txt
